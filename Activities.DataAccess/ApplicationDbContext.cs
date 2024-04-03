@@ -1,11 +1,14 @@
 ﻿using System;
-using System.Diagnostics;
+using Activities.Model;
 using Microsoft.EntityFrameworkCore;
-using Model;
 
 namespace DataAccess {
 	public class ApplicationDbContext : DbContext {
-		public DbSet<Activity> Activities { get; set; }
+
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) {
+        }
+
+        public DbSet<Activity> Activities { get; set; }
 	}
 }
 
