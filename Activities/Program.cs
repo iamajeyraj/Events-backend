@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<ApplicationDbContext>(Options => {
     Options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+
 });
 
 
@@ -28,6 +29,9 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
 

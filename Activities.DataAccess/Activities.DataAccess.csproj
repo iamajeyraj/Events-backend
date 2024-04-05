@@ -19,4 +19,14 @@
   <ItemGroup>
     <ProjectReference Include="..\Activities.Models\Activities.Models.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="DBInitializer\" />
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\IRepositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DBInitializer\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\IRepositories\" />
+  </ItemGroup>
 </Project>
