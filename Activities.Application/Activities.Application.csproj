@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Activities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Activities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Activities.Models\Activities.Models.csproj" />
+    <ProjectReference Include="..\Activities.DataAccess\Activities.DataAccess.csproj" />
+  </ItemGroup>
+</Project>

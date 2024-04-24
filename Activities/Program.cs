@@ -1,15 +1,11 @@
-﻿using DataAccess;
+﻿using Activities.Application;
+using Activities.Extensions;
+using DataAccess;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddRazorPages();
-builder.Services.AddDbContext<ApplicationDbContext>(Options => {
-    Options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
-
-});
-
+builder.Services.AddApplicationServices(builder.Configuration);
 
 var app = builder.Build();
 
@@ -21,6 +17,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseCors("Cors-Policy");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
