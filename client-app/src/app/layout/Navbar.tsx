@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, Container, Figure, Image, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Image, Nav, Navbar } from "react-bootstrap";
 
 export default function NavBar() {
     return (

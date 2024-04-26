@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Card, CardBody, CardFooter, CardHeader, CardTitle, Image } from "react-bootstrap";
 import { Activity } from "../../../app/models/activity";
 

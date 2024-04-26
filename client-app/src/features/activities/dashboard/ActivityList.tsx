@@ -1,6 +1,5 @@
-import React, { Fragment } from "react";
 import { Activity } from "../../../app/models/activity";
-import { Button, Card, CardBody, CardFooter, CardHeader, CardTitle, Col, Container, Row } from "react-bootstrap";
+import { Button, Card, CardFooter, CardTitle, Col, Row } from "react-bootstrap";
 
 interface Props {
     activities: Activity[];

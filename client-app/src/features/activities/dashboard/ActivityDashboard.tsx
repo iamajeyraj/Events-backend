@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Activity } from "../../../app/models/activity";
 import ActivityList from "./ActivityList";
