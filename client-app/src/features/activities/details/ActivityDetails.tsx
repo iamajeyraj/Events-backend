@@ -7,7 +7,7 @@ interface Props {
 export default function ActivityDetails({ activity }: Props) {
     return (
         <Card>
-            <Image src={`/assets/categoryImages/${activity.category}.png`} />
+            {/* <Image src={`/assets/categoryImages/${activity.category}.png`} />
             <CardHeader>
                 <CardTitle>{activity.title}</CardTitle>
             </CardHeader>
@@ -20,7 +20,7 @@ export default function ActivityDetails({ activity }: Props) {
             <CardFooter>
                 <Button variant="success"> Edit </Button>
                 <Button variant="danger"> Cancel </Button>
-            </CardFooter>
+            </CardFooter> */}
         </Card>
     )
 }
